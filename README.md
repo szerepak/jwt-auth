@@ -6,7 +6,7 @@ presentation purposes which was shown during the
 
 The only feature that this web app has is returning a random presigned URL to one of the files in the AWS S3 
 bucket under a stated folder. To make it possible you one must state the AWS credentials and other variables 
-in the `.env` file. Please see the [.env-schema file](./.env_schema) to see all the necessary configuration.
+in the `.env` file. Please see the [.env-schema file](./.env-schema) to see all the necessary configuration.
 
 ### Installation in the isolated environment using [venv](https://docs.python.org/3/library/venv.html)
 1. Go to the jwt-auth's main directory, i.e. to the directory where this `README.md` file is located.
