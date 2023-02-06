@@ -22,3 +22,26 @@ presentation purposes which was shown during the
     ```sh
     deactivate
     ```
+
+### Run
+
+```shell
+gunicorn --reload jwt_auth.app
+```
+
+### Request endpoints
+
+#### /jwt
+
+```shell
+curl -v -X POST localhost:8000/jwt -H "authorization: {user:password base64 encoded}"
+```
+
+#### /image
+```shell
+curl -v -X GET localhost:8000/image -H "authorization: Bearer {JWT base64 encoded}"
+```
+
+
+### Diagram
+![diagram](jwt-auth-example.drawio.png)
